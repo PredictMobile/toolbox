@@ -3,8 +3,8 @@ FROM node:lts-alpine as node
 FROM predictmobile/php:latest
 
 # add compsoer
-COPY ./composer-install.sh /composer-install.sh
-RUN . /composer-install.sh
+COPY ./composer-installer.sh /composer-installer.sh
+RUN . /composer-installer.sh
 
 # add node
 COPY --from=node /usr/local/bin /usr/local/bin
