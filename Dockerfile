@@ -1,4 +1,4 @@
-FROM node:lts-apline as node
+FROM node:lts-alpine as node
 
 FROM predictmobile/php:latest
 
